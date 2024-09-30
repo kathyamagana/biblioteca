@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7ADE77E1-1144-4633-8062-3ED1A585B00F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>biblioteca</RootNamespace>
+    <AssemblyName>biblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Controllers\AutorController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\EditorialController.cs" />
+    <Compile Include="Controllers\EtiquetaController.cs" />
+    <Compile Include="Controllers\GeneroController.cs" />
+    <Compile Include="Controllers\LibroController.cs" />
+    <Compile Include="Controllers\PrestamoController.cs" />
+    <Compile Include="Controllers\ResenaController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="EscritorioAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EscritorioAdmin.Designer.cs">
+      <DependentUpon>EscritorioAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EscritorioUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EscritorioUsuario.Designer.cs">
+      <DependentUpon>EscritorioUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EscritorioBibliotecario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EscritorioBibliotecario.Designer.cs">
+      <DependentUpon>EscritorioBibliotecario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Autor.cs" />
+    <Compile Include="Models\Dashboard.cs" />
+    <Compile Include="Models\Editorial.cs" />
+    <Compile Include="Models\Etiqueta.cs" />
+    <Compile Include="Models\Genero.cs" />
+    <Compile Include="Models\Libro.cs" />
+    <Compile Include="Models\Prestamo.cs" />
+    <Compile Include="Models\Resena.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Autores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Autores.Designer.cs">
+      <DependentUpon>Autores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetallesLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DetallesLibro.Designer.cs">
+      <DependentUpon>DetallesLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetallesUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DetallesUsuario.Designer.cs">
+      <DependentUpon>DetallesUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Editoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Editoriales.Designer.cs">
+      <DependentUpon>Editoriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Etiquetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Etiquetas.Designer.cs">
+      <DependentUpon>Etiquetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Generos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Generos.Designer.cs">
+      <DependentUpon>Generos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Libros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Libros.Designer.cs">
+      <DependentUpon>Libros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Prestamos.Designer.cs">
+      <DependentUpon>Prestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VerLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\VerLibro.Designer.cs">
+      <DependentUpon>VerLibro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EscritorioAdmin.resx">
+      <DependentUpon>EscritorioAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EscritorioBibliotecario.resx">
+      <DependentUpon>EscritorioBibliotecario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EscritorioUsuario.resx">
+      <DependentUpon>EscritorioUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Autores.resx">
+      <DependentUpon>Autores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DetallesLibro.resx">
+      <DependentUpon>DetallesLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DetallesUsuario.resx">
+      <DependentUpon>DetallesUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Editoriales.resx">
+      <DependentUpon>Editoriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Etiquetas.resx">
+      <DependentUpon>Etiquetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Generos.resx">
+      <DependentUpon>Generos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Libros.resx">
+      <DependentUpon>Libros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Prestamos.resx">
+      <DependentUpon>Prestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\VerLibro.resx">
+      <DependentUpon>VerLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
