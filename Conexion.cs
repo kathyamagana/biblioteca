@@ -12,7 +12,7 @@ namespace biblioteca
         {
             get
             {
-                return "Data Source=Melodia\\SQLEXPRESS01;Initial Catalog=biblioteca; Integrated Security=True;";
+                return "Data Source=\\SQLEXPRESS01;Initial Catalog=biblioteca; Integrated Security=True;";
             }
         }
     }
