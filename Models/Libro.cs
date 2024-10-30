@@ -35,6 +35,7 @@ namespace biblioteca.Models
     }
 
     public class DetalleLibro
+        //aca se hizo cambio de colores
     {
         public int IdLibro { get; set; }
         public string Autor { get; set; }
