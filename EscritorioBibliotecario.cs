@@ -51,6 +51,8 @@ namespace biblioteca
             tabPage6.Controls.Add(Prestamos);
             Prestamos.Show();
 
+//Se le agrego estilo al Dashboard de Bibliotecario.
+
             Libros Libros = new Libros();
             Libros.TopLevel = false;
             Libros.FormBorderStyle = FormBorderStyle.None;
