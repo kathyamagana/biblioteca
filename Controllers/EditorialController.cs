@@ -87,6 +87,8 @@ namespace biblioteca.Controllers
             }
         }
 
+        //aplicacion de crud 
+
         public void Actualizar(Editorial editorial)
         {
             using (SqlConnection connection = new SqlConnection(Conexion.connectionString))
