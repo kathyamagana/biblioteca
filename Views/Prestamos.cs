@@ -16,6 +16,8 @@ using biblioteca.Views;
 using MaterialSkin;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
+//Se ha finalizado la interfaz gráfica de Prestámos.
+
 namespace biblioteca.Views
 {
     public partial class Prestamos : MaterialForm
