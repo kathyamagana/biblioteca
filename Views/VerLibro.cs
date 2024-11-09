@@ -12,6 +12,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Se ha finalizado la interfaz gráfica de Ver Libros.
+
 namespace biblioteca.Views
 {
     public partial class VerLibro : Form
