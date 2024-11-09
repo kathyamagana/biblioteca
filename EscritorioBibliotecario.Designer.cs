@@ -21,7 +21,7 @@
         }
 
         #region Windows Form Designer generated code
-
+//Diseño terminado para el panel de Bibliotrecario.
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
