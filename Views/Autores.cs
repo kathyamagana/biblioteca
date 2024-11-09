@@ -13,7 +13,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using biblioteca.Models;
 using biblioteca.Views;
-
+//Se ha finalizado la interfaz gráfica de Autores.
 namespace biblioteca.Views
 {
     public partial class Autores : MaterialForm
