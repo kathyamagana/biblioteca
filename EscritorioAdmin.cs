@@ -13,7 +13,7 @@ using biblioteca.Controllers;
 using biblioteca.Models;
 using biblioteca.Views;
 using biblioteca.Views.Libros;
-
+//El diseño para el panel de Admin ha finalizado.
 namespace biblioteca
 {
     public partial class EscritorioAdmin : MaterialForm
